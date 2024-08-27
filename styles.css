@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+header{
+    background-color: #DE4545;
+    height: 90px;
+}
+section{
+    background-color: #5FE0C9;
+    height: 50vh;
+    color: black;
+    text-align: center;
+}
+
+.contenedor__form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2__contacto {
+    margin: 10vh 0 4vh 0;
+    text-align: center;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label__contact input {
+    width: 310px;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    border: solid 4px rgb(54, 51, 51)
+}
+
+.label__msj input {
+    width: 310px;
+    height: 115px;
+    margin-top: 10px;
+    border: solid 4px rgb(54, 51, 51)
+}
+
+.boton__contact {
+    width: 310px;
+    height: 45px;
+    margin-top: 30px;
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+}
+
+@media( width > 960px){
+    section{
+        height: 0px;
+    }
+    .contenedor__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10vh;
+        align-items: start;
+    }
+    .h2__contacto{
+        margin: 3vh;
+        margin-right: 8vh;
+        text-align: right;
+    }
+    .label__contact input {
+        width: 356px;
+        height: 45px;  
+    }
+    .label__msj input {
+        width: 356px;
+        height: 115px;
+    }
+    .boton__contact {
+        width: 356px;
+    }
+}
